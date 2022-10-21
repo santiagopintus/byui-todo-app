@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="(SITE DESCRIPTION HERE) Fancy site using SASS">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple app for tracking tasks" />
 
-  <!-- Fonts from google -->
-  <!-- LINK YOUR FONTS HERE (Roboto 100, 400, 700, 900 as an example -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Noto+Serif:wght@400;700&family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <!-- Fonts from google -->
+    <!-- LINK YOUR FONTS HERE (Roboto 100, 400, 700, 900 as an example -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka&family=Noto+Serif:wght@400;700&family=Roboto:wght@100;400;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/main.css">
-  
-  <!-- Title -->
-  <title>Fancy Sass Site</title>
-</head>
-<body>
-  
-</body>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Title -->
+    <title>Tasks Tracker</title>
+  </head>
+  <body>
+    <main class="container">
+      <h2>Your tasks</h2>
+      <ul id="tasksList" class="tasks-list">
+        <!-- Inserted dinamically -->
+        <li class="task-item">Task1</li>
+        <li class="task-item">Task2</li>
+        <li class="task-item">Task3</li>
+      </ul>
+    </main>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
 </html>

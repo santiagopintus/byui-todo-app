@@ -9,6 +9,7 @@ $gray: #b9b9b9;
 $black: #111111;
 $white: #dbf2ff;
 
+$textColor: $black;
 /* FONT SIZES */
 $fs: 1.6rem;
 $fsH1: 3.2rem;
@@ -17,8 +18,8 @@ $fsH3: 2.2rem;
 $fsH4: 1.8rem;
 
 /* FONT FAMILIES */
-$headingFont: 'Noto Serif', serif;
-$paragraphFont: 'Fredoka', sans-serif;
+$titleFont: 'Noto Serif', serif;
+$primaryFont: 'Fredoka', sans-serif;
 
 /* BREAKPOINTS */
 $bpS: 480px;

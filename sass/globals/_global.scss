@@ -9,12 +9,11 @@ html, body {
 /* NORMALIZING */
 *, *:before, *:after {
   box-sizing: border-box;
-  font-family: $paragraphFont;
+  font-family: $primaryFont;
   color: $textColor;
 }
 /* BODY */
 body {
-  line-height: $lineHeight;
   background-color: $white;
   font-size: $fs;
 }
@@ -23,3 +22,7 @@ h1 {font-size: $fsH1;}
 h2 {font-size: $fsH2;}
 h3 {font-size: $fsH3;}
 h4 {font-size: $fsH4;}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $titleFont;
+}

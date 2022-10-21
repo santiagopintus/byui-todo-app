@@ -5,6 +5,9 @@
 //Mixins go second
 @import 'globals/mixins';
 @import 'globals/global';
+@import 'globals/utils';
 
 //----- IMPORT LAYOUT STYLES (Specific styles for components) ----//
 @import 'layout/header';
+@import 'layout/tasks-list';
+@import 'layout/task-item';
