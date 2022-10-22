@@ -1,7 +1,26 @@
-.tasks-list {
+.tasks-list-container {
   background-color: $cPrimaryLight;
-  max-width: 50rem;
-  margin: 0 auto;
   padding: 1rem;
-  list-style: none;
+  width: 100%;
+
+  .tasks-list {
+    padding: .5rem;
+    overflow-y: scroll;
+    margin: 0;
+    list-style: none;
+    max-height: 50vh;
+
+    &::-webkit-scrollbar {
+      width: 1rem;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: .5rem;
+      background-color: $cPrimaryDark;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+  }
+
+  margin-bottom: 2.4rem;
 }

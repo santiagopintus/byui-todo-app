@@ -8,6 +8,10 @@
 @import 'globals/utils';
 
 //----- IMPORT LAYOUT STYLES (Specific styles for components) ----//
-@import 'layout/header';
+@import 'layout/main-layout';
 @import 'layout/tasks-list';
+@import 'layout/tasks-list-footer';
+@import 'layout/header';
 @import 'layout/task-item';
+@import 'layout/form';
+@import 'layout/filters';

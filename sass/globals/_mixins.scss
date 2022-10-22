@@ -1,64 +1,154 @@
-// MEDIA QUERIES MIXINS
 @mixin mobile {
-  @media only screen and (min-width: $bpM) {
+    @media only screen and (min-width: $mobileMin) {
     @content;
   }
 }
-//to use write: @include mobile { inside of these brackets go your css }
-
 @mixin tablet {
-  @media only screen and (min-width: $bpM) {
+  @media only screen and (min-width: $tabletMin) {
     @content;
   }
 }
-
 @mixin desktop {
-  @media only screen and (min-width: $bpL) {
+  @media only screen and (min-width: $desktopMin) {
     @content;
   }
 }
-
 @mixin large {
-  @media only screen and (min-width: $bpXL) {
+  @media only screen and (min-width: $largeMin) {
     @content;
   }
 }
-
-// FLEXBOX MIXINS
+//******** FLEXBOX MIXINS ********//
+// FLEX CENTER
 @mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-@mixin flex-between-start {
-  display: flex;
-  justify-content: space-between;
+@mixin flex-center-start {
+  @include flex-center;
   align-items: flex-start;
 }
-
-@mixin flex-between-center {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@mixin flex-center-end {
+  @include flex-center;
+  align-items: flex-end;
 }
-@mixin flex-start-center {
+@mixin flex-center-col {
+  @include flex-center;
+  flex-direction: column;
+}
+@mixin flex-center-start-col {
+  @include flex-center-start;
+  flex-direction: column;
+}
+@mixin flex-center-end-col {
+  @include flex-center-end;
+  flex-direction: column;
+}
+// FLEX START
+@mixin flex-start {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-@mixin flex-end-center {
+@mixin flex-start-start {
+  @include flex-start;
+  align-items: flex-start;
+}
+@mixin flex-start-end {
+  @include flex-start;
+  align-items: flex-end;
+}
+@mixin flex-start-col {
+  @include flex-start;
+  flex-direction: column;
+}
+@mixin flex-start-start-col {
+  @include flex-start-start;
+  flex-direction: column;
+}
+@mixin flex-start-end-col {
+  @include flex-start-end;
+  flex-direction: column;
+}
+// FLEX END
+@mixin flex-end {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 @mixin flex-end-start {
-  display: flex;
-  justify-content: flex-end;
+  @include flex-end;
   align-items: flex-start;
 }
-@mixin flex-around-center {
+@mixin flex-end-end {
+  @include flex-end;
+  align-items: flex-end;
+}
+//Flex end column direction variation
+@mixin flex-end-col {
+  @include flex-end;
+  flex-direction: column;
+}
+@mixin flex-end-start-col {
+  @include flex-end-start;
+  flex-direction: column;
+}
+@mixin flex-end-end-col {
+  @include flex-end-end;
+  flex-direction: column;
+}
+// FLEX SPACE-BETWEEN
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-between-start {
+  @include flex-between;
+  align-items: flex-start;
+}
+@mixin flex-between-end {
+  @include flex-between;
+  align-items: flex-end;
+}
+//Flex between column direction variation
+@mixin flex-between-col {
+  @include flex-between;
+  flex-direction: column;
+}
+@mixin flex-between-start-col {
+  @include flex-between-start;
+  flex-direction: column;
+}
+@mixin flex-between-end-col {
+  @include flex-between-end;
+  flex-direction: column;
+}
+// FLEX SPACE-AROUND
+@mixin flex-around {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@mixin flex-around-start {
+  @include flex-around;
+  align-items: flex-start;
+}
+@mixin flex-around-end {
+  @include flex-around;
+  align-items: flex-end;
+}
+//Flex around column direction variation
+@mixin flex-around-col {
+  @include flex-around;
+  flex-direction: column;
+}
+@mixin flex-around-start-col {
+  @include flex-around-start;
+  flex-direction: column;
+}
+@mixin flex-around-end-col {
+  @include flex-around-end;
+  flex-direction: column;
 }

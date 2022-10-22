@@ -7,7 +7,9 @@ $cSecondaryDark: #4b0092;
 $cSecondaryLight: #8400ff;
 $gray: #b9b9b9;
 $black: #111111;
-$white: #dbf2ff;
+$backgroundLight: #dbf2ff;
+$white: #ffffff;
+$error: #ec2626;
 
 $textColor: $black;
 /* FONT SIZES */
@@ -26,3 +28,10 @@ $bpS: 480px;
 $bpM: 768px;
 $bpL: 1024px;
 $bpXL: 1440px;
+
+/* Transitions */
+$transitionAll: all 200ms ease;
+
+/* BUTTON SHADOWS */
+$idleShadow: 0 2px 5px rgba(0,0,0,.4);
+$activeShadow: 0 1px 3px rgba(0,0,0,.4);

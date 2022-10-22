@@ -1,0 +1,35 @@
+.add-task-form {
+  width: 100%;
+  @include flex-start-end;
+  gap: .5rem;
+
+  .field {
+    width: 100%;
+    @include flex-start-start-col;
+    label {
+      font-size: 1.6rem;
+    }
+    input {
+      width: 100%;
+      height: 4rem;
+    }
+  }
+  button {
+    padding: 2px 12px;
+    border: none;
+    background-color: $white;
+    box-shadow: $idleShadow;
+    transition: $transitionAll;
+    font-size: 3rem;
+    @include flex-center;
+    border-radius: .4rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $gray;
+    }
+    &:active {
+      box-shadow: $activeShadow;
+    }
+  }
+}

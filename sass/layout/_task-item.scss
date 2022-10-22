@@ -1,12 +1,44 @@
 .tasks-list {
   .task-item {
+    @include flex-between;
+    gap: 1rem;
     background-color: $cPrimaryDark;
     padding: 1rem;
     margin-bottom: 1.6rem;
-    color: $white;
+    color: $backgroundLight;
 
     &:last-of-type {
       margin-bottom: 0;
+    }
+
+    label {
+      color: $white;
+      width: 100%;
+    }
+
+    /* Delete btn */
+    .delete-task-icon {
+      border: none;
+      background-color: transparent;
+      color: $white;
+      font-size: 2.4rem;
+      cursor: pointer;
+      transition: $transitionAll;
+
+      &:active {
+        color: $error;
+      }
+    }
+
+    &.completed {
+      background-color: $gray;
+      label {
+        color: $black;
+        text-decoration: line-through;
+      }
+      .delete-task-icon {
+        color: $black;
+      }
     }
   }
 }

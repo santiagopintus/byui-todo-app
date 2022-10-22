@@ -3,3 +3,11 @@
   max-width: 120rem;
   margin: 0 auto;
 }
+
+.small-container {
+  @include flex-between-col;
+  width: 100%;
+  max-width: 50rem;
+  height: 90vh;
+  margin: 0 auto;
+}

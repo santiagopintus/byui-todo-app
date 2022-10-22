@@ -23,13 +23,38 @@
   </head>
   <body>
     <main class="container">
-      <h2>Your tasks</h2>
-      <ul id="tasksList" class="tasks-list">
-        <!-- Inserted dinamically -->
-        <li class="task-item">Task1</li>
-        <li class="task-item">Task2</li>
-        <li class="task-item">Task3</li>
-      </ul>
+      <h2 class="main-title">Todos</h2>
+      <div class="small-container">
+        <div class="tasks-list-container">
+          <ul id="tasksList" class="tasks-list">
+            <!-- Inserted dinamically -->
+            <p>There are no tasks to show</p>
+          </ul>
+          <div class="list-footer">
+            <p class="remaining-tasks">
+              <span id="remainingTasksNum">0</span>
+              tasks left
+            </p>
+            <div class="filters-container">
+              <label id="filterAll" for="all">All.</label>
+              <input class="filter" checked type="radio" id="all" name="filters"/>
+              <label id="filterActive" for="active">Active.</label>
+              <input class="filter" type="radio" id="active" name="filters"/>
+              <label id="filterCompleted" for="completed">Completed</label>
+              <input class="filter" type="radio" id="completed" name="filters"/>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add task form -->
+        <form class="add-task-form" id="tasksForm">
+          <div class="field">
+            <label for="taskName">Task name</label>
+            <input type="text" name="taskName" id="taskName" />
+          </div>
+          <button id="addTask">+</button>
+        </form>
+      </div>
     </main>
 
     <script src="js/main.js" type="module"></script>

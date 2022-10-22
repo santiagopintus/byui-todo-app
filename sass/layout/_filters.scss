@@ -1,0 +1,11 @@
+.filter {
+  display: none;
+}
+
+label {
+  padding: .5rem;
+  &.active {
+    border: 1px solid $white;
+    color: $white;
+  }
+}
